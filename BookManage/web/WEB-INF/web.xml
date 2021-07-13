@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <display-name></display-name>
+    <welcome-file-list><welcome-file>admin/login/home.jsp</welcome-file></welcome-file-list>
+
+    <servlet>
+        <servlet-name>bookListServlet</servlet-name>
+        <servlet-class>Web.BookListServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>addBookServlet</servlet-name>
+        <servlet-class>Web.AddBookServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>findBookByIdServlet</servlet-name>
+        <servlet-class>Web.FindBookByIdServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>updateBookServlet</servlet-name>
+        <servlet-class>Web.UpdateBookServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>deleteBookServlet</servlet-name>
+        <servlet-class>Web.DeleteBookServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>bookListServlet</servlet-name>
+        <url-pattern>/servlet/bookListServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>addBookServlet</servlet-name>
+        <url-pattern>/servlet/addBookServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>findBookByIdServlet</servlet-name>
+        <url-pattern>/servlet/findBookByIdServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>updateBookServlet</servlet-name>
+        <url-pattern>/servlet/updateBookServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>deleteBookServlet</servlet-name>
+        <url-pattern>/servlet/deleteBookServlet</url-pattern>
+    </servlet-mapping>
+</web-app>
